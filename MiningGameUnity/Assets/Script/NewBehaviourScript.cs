@@ -24,12 +24,6 @@ public class NewBehaviourScript : MonoBehaviour
         { 
         MinerStorage =( MinerStorage + (MineConst * Time.deltaTime * Miners * MinerUpgrade));
         }
-
-        
-
-        
-
-
     }
     void OnGUI()
     {
@@ -47,6 +41,15 @@ public class NewBehaviourScript : MonoBehaviour
         }
 
     }
+    public void BuyStorage()
+    {
+        if (MinerMax < 1500 && MinerStorage >50)
+        {
+            MinerMax = MinerMax + 50 ;
+            MinerStorage -= 50;
+        }
+
+    }
     public void BuyMiner()
     {
         if (Miners < 30 && MinerStorage > 5)
@@ -55,8 +58,6 @@ public class NewBehaviourScript : MonoBehaviour
             MinerStorage -= 5;
         }
 
+
     }
-
-
-
-}
+    }
