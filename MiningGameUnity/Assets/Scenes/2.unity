@@ -853,7 +853,7 @@ MonoBehaviour:
     m_SelectOnRight: {fileID: 0}
   m_Transition: 1
   m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_NormalColor: {r: 0.5060075, g: 0.6274767, b: 0.7830189, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
@@ -956,10 +956,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142292b1de8460e43bcfe26c0a219f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MineConst: 10
+  MineConst: 5
   Miners: 1
-  MinerMax: 100
+  MinerMax: 1
   MinerUpgrade: 1
+  UpgradeCostRab: 5
+  UpgradeCostUp: 5
+  UpgradeCostStor: 5
+  constan: 5
+  upgradeText1: {fileID: 1968472604}
+  upgradeText2: {fileID: 1179126213}
+  upgradeText3: {fileID: 1312832120}
 --- !u!4 &1777909975
 Transform:
   m_ObjectHideFlags: 0
