@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class MineManager : MonoBehaviour
 {
     static public int minerCount;
     static public float minerStorage;
@@ -22,10 +22,10 @@ public class GameManager : MonoBehaviour
         minerStorageMax = 100f;
         upgradeCostMiner = 10f;
         upgradeCost = 10f;
-        upgradeCostStorage = 50f;
+        upgradeCostStorage = 10f;
         upgradeCount = 1;
         storageUpgradeCount = 1;
-        constant = 1.15f;
+        constant = 1.07f;
     }
 
 
