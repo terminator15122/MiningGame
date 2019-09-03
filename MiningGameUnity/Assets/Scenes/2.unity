@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 88456448}
   - component: {fileID: 88456447}
   m_Layer: 5
-  m_Name: MinerStorage
+  m_Name: Storage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -547,7 +547,7 @@ GameObject:
   - component: {fileID: 1179126214}
   - component: {fileID: 1179126213}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Miner Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 1312832121}
   - component: {fileID: 1312832120}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Storage Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,7 +807,7 @@ GameObject:
   - component: {fileID: 1671499158}
   - component: {fileID: 1671499157}
   m_Layer: 5
-  m_Name: Miners
+  m_Name: Miner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -937,8 +937,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1777909975}
   - component: {fileID: 1777909974}
+  - component: {fileID: 1777909976}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -956,17 +957,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 142292b1de8460e43bcfe26c0a219f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MineConst: 5
-  Miners: 1
-  MinerMax: 1
-  MinerUpgrade: 1
-  UpgradeCostRab: 5
-  UpgradeCostUp: 5
-  UpgradeCostStor: 5
-  constan: 5
-  upgradeText1: {fileID: 1968472604}
-  upgradeText2: {fileID: 1179126213}
-  upgradeText3: {fileID: 1312832120}
+  upgradeTextUpgrade: {fileID: 1968472604}
+  upgradeTextMiner: {fileID: 1179126213}
+  upgradeTextStorage: {fileID: 1312832120}
 --- !u!4 &1777909975
 Transform:
   m_ObjectHideFlags: 0
@@ -975,12 +968,24 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1777909973}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.040949117, y: 0.2580323, z: -2.0803616}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1777909976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777909973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769db8d6598e962458ed237a86063850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1968472602
 GameObject:
   m_ObjectHideFlags: 0
@@ -993,7 +998,7 @@ GameObject:
   - component: {fileID: 1968472605}
   - component: {fileID: 1968472604}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Upgrade Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
